@@ -76,6 +76,13 @@
             transform: translateY(-5px);
             box-shadow: 0 15px 35px rgba(0,0,0,0.1);
         }
+        @media screen and (max-width: 768px) {
+            .hero-bg {
+                min-height: 100vh;
+                background-attachment: scroll; /* Prevents potential mobile background bugs */
+            }
+        }
+
     </style>
 </head>
 <body class="font-cairo bg-neutral text-gray-800">
@@ -86,7 +93,7 @@
                 <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
                     كن بلسماً لجراحهم.. أطعمهم
                     <br>
-                    <span class="text-primary">اغنم الأجر الآن</span>
+                    <span class="text-primary">اغتنم الأجر الآن</span>
                 </h1>
                 <p class="text-xl md:text-2xl mb-8 max-w-4xl mx-auto leading-relaxed">
                     ساهم بتبرعك الكريم في مبادرتنا لدعم العائلات النازحة في قطاع غزة. هدفنا 50,000 دولار
@@ -169,7 +176,7 @@
                                onclick="return validateAndDonate()"
                                class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg text-xl btn-hover">
                                 <i class="fab fa-paypal mr-2"></i>
-                                تبرع عبر PayPal
+                                تبرع الآن
                             </a>
                         </div>
                     </form>
